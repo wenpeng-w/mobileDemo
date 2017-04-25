@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>手机端自适应-rem</title>
+		<meta name="keywords" content="自适应,rem" />
+	    <meta name="description" content="手机端自适应布局" />
+	    <script type="text/javascript">
+	        //根据屏幕大小及dpi调整缩放和大小
+	        (function() {
+	            var scale = 1.0;
+	            var ratio = 1;
+	            if (window.devicePixelRatio >= 2) {
+	            	scale *= 0.5;
+	                ratio *= 2;
+	            }
+	            var text = '<meta name="viewport" content="initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', width=device-width, user-scalable=no" />';
+	            document.write(text);
+	            document.documentElement.style.fontSize = 50*ratio + "px";
+	        })();
+	    </script>
+	    <meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<!--iphone中safari私有meta标签,允许全屏模式浏览,隐藏浏览器导航栏-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!--iphone中safari顶端的状态条的样式black(黑色)-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="top-head-left">
+				<a class="selecte-city" href="changecity.html">
+					<span class="city">上海</span><i class="selecte-icon"></i>
+				</a>
+			</div>
+			<div class="search-bar">
+				<a class="seach-box" href="javascript:void(0);">
+					<i class="search-icon"></i>
+					<span class="search-tips">
+						关键字提示
+					</span>
+				</a>
+			</div>
+			<div class="top-head-right">
+				<a class="user-bar" href="javascript:void(0);">
+					<i class="user-icon"></i>
+				</a>
+			</div>
+		</header>
+		<section>
+			<div class="content-container">
+				<div class="banner-wrap">
+					<ul class="banner-inner-box">
+						<li class="banner-item">
+							<img src="img/banner02.jpg"/>
+						</li>
+					</ul>
+				</div>
+				<div class="menu-wrap">
+					<ul class="menu-wrap-inner clearfix">
+						<li>
+							<a class="menu-list-item" href="javascript:void(0);">
+								<img src="img/cloud-circle.png"/>
+								<span>导航项</span>
+							</a>
+						</li>
+						<li>
+							<a class="menu-list-item" href="javascript:void(0);">
+								<img src="img/dribbble_F.png"/>
+								<span>导航项</span>
+							</a>
+						</li>
+						<li>
+							<a class="menu-list-item" href="javascript:void(0);">
+								<img src="img/qzone_F.png"/>
+								<span>导航项</span>
+							</a>
+						</li>
+						<li>
+							<a class="menu-list-item" href="javascript:void(0);">
+								<img src="img/reddit_L.png"/>
+								<span>导航项</span>
+							</a>
+						</li>
+						<li>
+							<a class="menu-list-item" href="javascript:void(0);">
+								<img src="img/satellite.png"/>
+								<span>导航项</span>
+							</a>
+						</li>
+						<li>
+							<a class="menu-list-item" href="javascript:void(0);">
+								<img src="img/youdao_note_F.png"/>
+								<span>导航项</span>
+							</a>
+						</li>
+						<li>
+							<a class="menu-list-item" href="javascript:void(0);">
+								<img src="img/satellite.png"/>
+								<span>导航项</span>
+							</a>
+						</li>
+						<li>
+							<a class="menu-list-item" href="javascript:void(0);">
+								<img src="img/reddit_L.png"/>
+								<span>导航项</span>
+							</a>
+						</li>
+						<li>
+							<a class="menu-list-item" href="javascript:void(0);">
+								<img src="img/cloud-circle.png"/>
+								<span>导航项</span>
+							</a>
+						</li>
+						<li>
+							<a class="menu-list-item" href="javascript:void(0);">
+								<img src="img/dribbble_F.png"/>
+								<span>导航项</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="guide-wrap">
+					<div class="pd">
+						<div class="guide-left">
+							<a class="react" href="javascript:void(0);">
+								<span class="guide-info">
+									<strong>强调标题</strong>
+									<small>副标题</small>
+								</span>
+								<span class="img-box"><img src="img/dg.png"/></span>
+							</a>
+						</div>
+						<div class="guide-right">
+							<div class="guide-top">
+								<a class="react" href="javascript:void(0);">
+									<span class="guide-info">
+										<strong>强调标题</strong>
+										<small>副标题</small>
+									</span>
+									<span class="img-box"><img src="img/dg.png"/></span>
+								</a>
+							</div>
+							<div class="guide-bottom">
+								<a class="react" href="javascript:void(0);">
+									<span class="guide-info">
+										<strong>强调标题</strong>
+										<small>副标题</small>
+									</span>
+									<span class="img-box"><img src="img/dg.png"/></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list-wrap">
+					<dl class="list-wrap-inner">
+						<dt class="list-title">最新推荐</dt>
+						<dd>
+							<a href="javascript:void(0);">
+								<div class="list-item">
+									<div class="list-left-img img-box">
+										<img src="img/listImg.jpg"/>
+									</div>
+									<div class="list-right-info">
+										<div class="list-info-hd">列表项标题</div>
+										<div class="list-info-desc">列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简</div>
+										<div class="list-info-time">
+											<span class="price">￥66.66</span><span>2016/12/12</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</dd>
+						<dd>
+							<a href="javascript:void(0);">
+								<div class="list-item">
+									<div class="list-left-img img-box">
+										<img src="img/listImg.jpg"/>
+									</div>
+									<div class="list-right-info">
+										<div class="list-info-hd">列表项标题</div>
+										<div class="list-info-desc">列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介列表项简介</div>
+										<div class="list-info-time">
+											<span class="price">￥66.66</span><span>2016/12/12</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</dd>
+						<dd>
+							<a href="javascript:void(0);">
+								<div class="list-item">
+									<div class="list-left-img img-box">
+										<img src="img/listImg.jpg"/>
+									</div>
+									<div class="list-right-info">
+										<div class="list-info-hd">列表项标题</div>
+										<div class="list-info-desc">列表项简介列表项简介列表项简介列表</div>
+										<div class="list-info-time">
+											<span class="price">￥66.66</span><span>2016/12/12</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</dd>
+						<dd>
+							<a href="javascript:void(0);">
+								<div class="list-item">
+									<div class="list-left-img img-box">
+										<img src="img/listImg.jpg"/>
+									</div>
+									<div class="list-right-info">
+										<div class="list-info-hd">列表项标题</div>
+										<div class="list-info-desc">列表项简介列表项简介列表项简介列表</div>
+										<div class="list-info-time">
+											<span class="price">￥66.66</span><span>2016/12/12</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</dd>
+						<dd>
+							<a href="javascript:void(0);">
+								<div class="list-item">
+									<div class="list-left-img img-box">
+										<img src="img/listImg.jpg"/>
+									</div>
+									<div class="list-right-info">
+										<div class="list-info-hd">列表项标题</div>
+										<div class="list-info-desc">列表项简介列表项简介列表项简介列表</div>
+										<div class="list-info-time">
+											<span class="price">￥66.66</span><span>2016/12/12</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</dd>
+						<dd>
+							<a href="javascript:void(0);">
+								<div class="list-item">
+									<div class="list-left-img img-box">
+										<img src="img/listImg.jpg"/>
+									</div>
+									<div class="list-right-info">
+										<div class="list-info-hd">列表项标题</div>
+										<div class="list-info-desc">列表项简介列表项简介列表项简介列表</div>
+										<div class="list-info-time">
+											<span class="price">￥66.66</span><span>2016/12/12</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</dd>
+						<dd>
+							<a href="javascript:void(0);">
+								<div class="list-item">
+									<div class="list-left-img img-box">
+										<img src="img/listImg.jpg"/>
+									</div>
+									<div class="list-right-info">
+										<div class="list-info-hd">列表项标题</div>
+										<div class="list-info-desc">列表项简介列表项简介列表项简介列表</div>
+										<div class="list-info-time">
+											<span class="price">￥66.66</span><span>2016/12/12</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</section>
+		<div class="footer">
+			<div class="links">
+				友情链接：<a href="https://www.baidu.com/">百度一下</a><a href="http://i.meituan.com/">美团</a><a href="https://m.taobao.com">手机淘宝</a>
+			</div>
+			<div class="copyright">
+				<div class="hr"></div>
+				<span class="copyright-text">© 2016 零点陆壹捌 版权所有</span>
+			</div>
+		</div>
+		<!--选项卡工具-->
+		<div id="tab_tools" class="tab-tools">
+			<div class="tab-back"></div>
+		</div>
+<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
